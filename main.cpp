@@ -1,17 +1,17 @@
-//write a program that inputs the radius of circle
-//and displays the circumference by using formula 2(PI)r
-//store the value of PI in a constant by using DEFINE
-//directive.
+//Increment and decrement operator
+//prefix form & profix form
+
 #include<iostream>
 using namespace std;
-#define PI 3.141
-
 int main()
 {
-    float r, area;
-    cout<<"Enter a radius: "<<endl;
-    cin>>r;
-    area = 2*PI*r;
-    cout<<"Area is = "<<area<<endl;
+    int a,b,x,y;
+    a=b=x=y=4;
+    b=a--;
+    --x;
+    y=x;
+    cout<<"a = "<<a<<endl<<"b = "<<b<<endl;
+    cout<<"y = "<<y<<endl<<"x = "<<x<<endl;
     return 0;
+    
 }
