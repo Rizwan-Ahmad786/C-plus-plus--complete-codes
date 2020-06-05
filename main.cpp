@@ -1,21 +1,14 @@
-//      Program 3.9
-//write a program that solves the following expression.
-//a*b/(-c*31%13)*d
-//Assuming the values of variables are as follows.
-//a=10, b=20, c=15, d=8,
+//write a program that adds two floating point numbers
+//and shows the sum on screen.
 
 #include<iostream>
 using namespace std;
 int main()
 {
-    int a,b,c,d,e;
-    a=10;
-    b=20;
-    c=15;
-    d=8;
-    e=a*b/(-c*31%13)*d;
-    cout<<"Result of expression is: "<<e<<endl;
+    float var1,var2,res;
+    var1= 20.6;
+    var2=35.8;
+    res= var1+var2;
+    cout<<var1<<"+"<<var2<<"="<<res<<endl;
     return 0;
-    
-    
 }
