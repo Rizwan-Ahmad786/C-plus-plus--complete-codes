@@ -1,14 +1,35 @@
-//write a program that adds two floating point numbers
-//and shows the sum on screen.
-
-#include<iostream>
+//  PROGRAM TO FIND MAXIMUM VALUE IN ARRAY.
+#include <iostream>
 using namespace std;
+
 int main()
 {
-    float var1,var2,res;
-    var1= 20.6;
-    var2=35.8;
-    res= var1+var2;
-    cout<<var1<<"+"<<var2<<"="<<res<<endl;
-    return 0;
+    int size,index = -1;
+    cout<<"Enter the size of array: ";
+    cin>>size;
+    float array[size],max;
+    
+    for(int i=0; i<size; i++)
+    {
+        cout<<"Enter "<<i+1<<" value: ";
+        cin>>array[i];
+    }
+    cout<<"Enter a value to check the maximum value in data:";
+    cin>>max;
+    
+    for(int i=0; i<size; i++)
+        if(max <= array[i])
+        {
+            max = array[i];
+            index = i;
+        }
+    if(index==-1)
+        cout<<"\nCannot found the maximum number because\nthe value you enter "
+        << max << " is larger from the given data: \n"<<endl;
+    else
+    {
+        cout<<"\nThe maximum value is "<< max <<endl<<endl;
+        cout<<"value found at index number "<<index<<endl;
+        
+    }
 }
